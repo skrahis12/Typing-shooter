@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent iOS double-tap zoom while playing */
+html, body {
+  touch-action: manipulation;
+}
+
+@keyframes bb-pop {
+  0% { transform: translate(-50%,-50%) scale(1); opacity: 1; }
+  60% { transform: translate(-50%,-50%) scale(1.35); opacity: 0.85; }
+  100% { transform: translate(-50%,-50%) scale(0.2); opacity: 0; }
+}
+
+
